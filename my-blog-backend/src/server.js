@@ -47,6 +47,27 @@ app.post('/api/articles/:name/comments', async (req, res) => {
     }
 });
 
+// app.post('/api/reset', async (req, res) => {
+//     const defaultData = [
+//         { name: 'learn-react', upvotes: 0, comments: [] },
+//         { name: 'learn-node', upvotes: 0, comments: [] },
+//         { name: 'mongodb', upvotes: 0, comments: [] },
+//     ];
+
+//     try {
+//         // Clear the collection
+//         await db.collection('articles').deleteMany({});
+
+//         // Insert default data
+//         await db.collection('articles').insertMany(defaultData);
+
+//         res.send('Data has been reset to default state!');
+//     } catch (err) {
+//         console.error(err);
+//         res.status(500).send('Error resetting the data.');
+//     }
+// });
+
 connectToDb(() => {
     console.log('Successfully connected to database!');
     app.listen(8000, () => {
