@@ -4,7 +4,7 @@ import express from 'express';
 import { db, connectToDb } from './db.js';
 
 const credentials = JSON.parse(
-    fs.readFileSync('../credentials.json')
+    fs.readFileSync('./credentials.json')
 );
 admin.initializeApp({
     credential: admin.credential.cert(credentials),
