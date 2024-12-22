@@ -23,7 +23,7 @@ const LoginPage = () => {
         <h1>Log In</h1>
         {error && <p className="error">{error}</p>}
         <input
-            placeholder="Youe email address"
+            placeholder="Your email address"
             value={email}
             onChange={e => setEmail(e.target.value)} /> {/* event setEmail to event */}
         <input 
