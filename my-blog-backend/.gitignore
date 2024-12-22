@@ -25,3 +25,4 @@ yarn-error.log*
 mongo-db-data
 credentials.json
 .env
+prod-env.yaml
